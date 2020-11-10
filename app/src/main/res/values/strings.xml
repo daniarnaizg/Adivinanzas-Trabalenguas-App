@@ -7,10 +7,10 @@
     <string name="erd_remind_me_later">En otro momento</string>
     <string name="erd_rate_now">Calificar ahora</string>
 
-    <string name="adivinanzas_menu_Banner_id">ca-app-pub-1638623502605136/8895457011</string>
-    <string name="adivinanzas_cards_Banner_id">ca-app-pub-1638623502605136/8731805484</string>
-    <string name="trabalenguas_menu_Banner_id">ca-app-pub-1638623502605136/1253087943</string>
-    <string name="trabalenguas_cards_Banner_id">ca-app-pub-1638623502605136/6105642142</string>
-    <string name="trabadivi_interstitial_id">ca-app-pub-1638623502605136/3479478801</string>
+<!--    <string name="adivinanzas_menu_Banner_id">ca-app-pub-1638623502605136/8895457011</string>-->
+<!--    <string name="adivinanzas_cards_Banner_id">ca-app-pub-1638623502605136/8731805484</string>-->
+<!--    <string name="trabalenguas_menu_Banner_id">ca-app-pub-1638623502605136/1253087943</string>-->
+<!--    <string name="trabalenguas_cards_Banner_id">ca-app-pub-1638623502605136/6105642142</string>-->
+<!--    <string name="trabadivi_interstitial_id">ca-app-pub-1638623502605136/3479478801</string>-->
 
 </resources>

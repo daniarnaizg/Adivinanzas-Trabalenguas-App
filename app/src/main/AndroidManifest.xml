@@ -16,7 +16,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-1638623502605136~9090898137"/>
+            android:value="@string/ADMOB_APPLICATION_ID"/>
 
         <activity android:name="esp.adivinanzas.trabalenguas.AdivinanzasViewPager" />
         <activity android:name="esp.adivinanzas.trabalenguas.AdivinanzaActivity" />
