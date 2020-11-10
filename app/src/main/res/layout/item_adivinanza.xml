@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/btnVerSol"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginBottom="10dp" />-->
+
+    <LinearLayout
+        android:id="@+id/buttonVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?selectableItemBackgroundBorderless"
+        android:orientation="vertical">
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconVer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha=".3"
+            app:si_disabled_color="#BEBEBE"
+            app:si_enabled="true"
+            app:si_no_dash="false"
+            app:si_tint_color="#BEBEBE"
+            app:srcCompat="@drawable/ic_cloud" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="250dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_adivinanza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/itim"
+                    android:text="Vuelo de noche, duermo en el día y nunca veras plumas en ala mía."
+                    android:textColor="#FF101D65"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_solucion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/itim"
+                    android:text="La solución"
+                    android:textColor="#1D024C"
+                    android:textSize="32sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+    <!--    android:justificationMode="inter_word"-->

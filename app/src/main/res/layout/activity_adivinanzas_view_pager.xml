@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdivinanzasViewPager">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/AdivinanzasviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never" />
+
+    <!-- ADVIEW -->
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/EmptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@id/ad_view_container"
+        android:text="Vaya, parece que aún no hay nada aquí.\n\nPrueba a añadir una adivinanza desde la pantalla anterior."
+        android:textColor="#888888"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/btnDel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="safeDelete"
+        app:si_animation_duration="500"
+        app:si_disabled_alpha=".3"
+        app:si_disabled_color="#BEBEBE"
+        app:si_enabled="true"
+        app:si_no_dash="true"
+        app:si_tint_color="#BEBEBE"
+        app:srcCompat="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/btnDelAv"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="60dp"-->
+    <!--        android:onClick="safeDelete"-->
+    <!--        android:src="@drawable/fat_icon" />-->
+
+</RelativeLayout>
